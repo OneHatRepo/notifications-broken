@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
+    "ebd": "eas build --profile dev",
+    "esd": "EXPO_DEBUG=1 npx expo start --dev-client --lan -c",
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
@@ -12,7 +14,11 @@
     "expo": "~46.0.7",
     "expo-status-bar": "~1.4.0",
     "react": "18.0.0",
-    "react-native": "0.69.4"
+    "react-native": "0.69.4",
+    "expo-dev-client": "~1.2.1",
+    "expo-notifications": "~0.16.1",
+    "expo-device": "~4.3.0",
+    "expo-constants": "~13.2.3"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"

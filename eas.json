@@ -1,0 +1,33 @@
+{
+	"cli": {
+		"version": ">= 0.53.1"
+	},
+	"build": {
+		"base": {
+			"distribution": "internal",
+			"developmentClient": false,
+			"ios": {
+				"simulator": false
+			},
+			"android": {
+				"withoutCredentials": false
+			}
+		},
+		"dev": {
+			"distribution": "internal",
+			"developmentClient": true,
+			"ios": {
+				"image": "latest"
+			},
+			"android": {
+				"buildType": "apk"
+			},
+			"channel": "dev"
+		},
+		"default": {
+			"extends": "base",
+			"channel": "default"
+		}
+	}
+}
+
